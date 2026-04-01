@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Artcakess - Design Order Form</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo-icon">
+                <span class="material-symbols-outlined" data-icon="palette">palette</span>
+            </div>
+            <h1 class="logo-text">Artcakess</h1>
+        </div>
+        <div class="header-right">
+            <button class="notify-btn">
+                <span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="card">
+            <div class="card-title">
+                <span class="card-title-bar"></span>
+                <h3>Design Order Form</h3>
+            </div>
+
+            <form>
+                <div class="form-group grid-2">
+                    <div class="input-wrapper">
+                        <label class="form-label">Full Name</label>
+                        <input class="form-input" placeholder="" type="text" />
+                    </div>
+                    <div class="input-wrapper">
+                        <label class="form-label">Email Address</label>
+                        <input class="form-input" placeholder="" type="email" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Order Type</label>
+                    <div class="grid-4">
+                        <label class="radio-card-label">
+                            <input class="radio-card-input" name="order_type" type="radio" />
+                            <div class="radio-card-content">
+                                <span class="material-symbols-outlined mb-2"
+                                    data-icon="auto_awesome">auto_awesome</span>
+                                <span class="radio-card-text">Poster</span>
+                            </div>
+                        </label>
+                        <label class="radio-card-label">
+                            <input class="radio-card-input" name="order_type" type="radio" />
+                            <div class="radio-card-content">
+                                <span class="material-symbols-outlined mb-2" data-icon="flag">flag</span>
+                                <span class="radio-card-text">Banner</span>
+                            </div>
+                        </label>
+                        <label class="radio-card-label">
+                            <input class="radio-card-input" name="order_type" type="radio" />
+                            <div class="radio-card-content">
+                                <span class="material-symbols-outlined mb-2" data-icon="hub">hub</span>
+                                <span class="radio-card-text">Mindmap</span>
+                            </div>
+                        </label>
+                        <label class="radio-card-label">
+                            <input checked class="radio-card-input" name="order_type" type="radio" />
+                            <div class="radio-card-content">
+                                <span class="material-symbols-outlined mb-2"
+                                    data-icon="bar_chart_4_bars">bar_chart_4_bars</span>
+                                <span class="radio-card-text">Infographic</span>
+                            </div>
+                        </label>
+                        <label class="radio-card-label">
+                            <input class="radio-card-input" name="order_type" type="radio" />
+                            <div class="radio-card-content">
+                                <span class="material-symbols-outlined mb-2" data-icon="pentagon">pentagon</span>
+                                <span class="radio-card-text">Logo</span>
+                            </div>
+                        </label>
+                        <label class="radio-card-label">
+                            <input class="radio-card-input" name="order_type" type="radio" />
+                            <div class="radio-card-content">
+                                <span class="material-symbols-outlined mb-2" data-icon="badge">badge</span>
+                                <span class="radio-card-text">Twibbon</span>
+                            </div>
+                        </label>
+                        <label class="radio-card-label">
+                            <input class="radio-card-input" name="order_type" type="radio" />
+                            <div class="radio-card-content">
+                                <span class="material-symbols-outlined mb-2"
+                                    data-icon="contact_mail">contact_mail</span>
+                                <span class="radio-card-text">ID Card</span>
+                            </div>
+                        </label>
+                        <label class="radio-card-label">
+                            <input class="radio-card-input" name="order_type" type="radio" />
+                            <div class="radio-card-content">
+                                <span class="material-symbols-outlined mb-2" data-icon="brush">brush</span>
+                                <span class="radio-card-text">Custom</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Theme &amp; Details</label>
+                    <textarea class="form-input"
+                        placeholder="Describe your design vision, preferred colors, and inspiration..."
+                        rows="4"></textarea>
+                </div>
+
+                <div class="form-group grid-2">
+                    <div class="input-wrapper">
+                        <label class="form-label">Deadline</label>
+                        <input class="form-input" type="date" />
+                    </div>
+                    <div class="input-wrapper">
+                        <label class="form-label">Dimensions (W x H in cm)</label>
+                        <div class="dimensions-group">
+                            <input class="form-input" placeholder="W" type="number" />
+                            <div class="times">×</div>
+                            <input class="form-input" placeholder="H" type="number" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group grid-2">
+                    <div class="input-wrapper">
+                        <label class="form-label">Canva Link Access</label>
+                        <div class="radio-group-horizontal">
+                            <label class="radio-inline-label">
+                                <input class="radio-inline-input" name="canva" type="radio" />
+                                <span class="radio-inline-text">Yes</span>
+                            </label>
+                            <label class="radio-inline-label">
+                                <input checked class="radio-inline-input" name="canva" type="radio" />
+                                <span class="radio-inline-text">No</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <label class="form-label">Telegram Subscribed</label>
+                        <div class="radio-group-horizontal">
+                            <label class="radio-inline-label">
+                                <input class="radio-inline-input" name="telegram" type="radio" />
+                                <span class="radio-inline-text">Yes</span>
+                            </label>
+                            <label class="radio-inline-label">
+                                <input checked class="radio-inline-input" name="telegram" type="radio" />
+                                <span class="radio-inline-text">No</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Payment Method</label>
+                    <div class="payment-grid">
+                        <label class="radio-card-label">
+                            <input class="radio-card-input" name="payment" type="radio" />
+                            <div class="payment-card-content">
+                                <span class="payment-card-text">ShopeePay</span>
+                            </div>
+                        </label>
+                        <label class="radio-card-label">
+                            <input class="radio-card-input" name="payment" type="radio" />
+                            <div class="payment-card-content">
+                                <span class="payment-card-text">Gopay</span>
+                            </div>
+                        </label>
+                        <label class="radio-card-label">
+                            <input class="radio-card-input" name="payment" type="radio" />
+                            <div class="payment-card-content">
+                                <span class="payment-card-text">Dana</span>
+                            </div>
+                        </label>
+                        <label class="radio-card-label">
+                            <input checked class="radio-card-input" name="payment" type="radio" />
+                            <div class="payment-card-content">
+                                <span class="payment-card-text">QRIS</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="submit-section">
+                    <button class="submit-btn" type="submit">
+                        <span>Order Now</span>
+                        <span class="material-symbols-outlined" data-icon="send">send</span>
+                    </button>
+                    <p class="footer-text">Secured checkout powered by Artcakess</p>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
